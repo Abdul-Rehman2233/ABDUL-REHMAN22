@@ -1,0 +1,156 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300&family=Poppins&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+nav{
+    height: 20vh;
+   
+   
+}
+.logo{
+    width: 30%;
+    display: inline-block;
+    padding: 0px 15px;
+    margin: 0px 20px;
+    margin-top: 10px;
+    vertical-align: middle; 
+
+}
+a{
+    color: black;
+}
+.list .active{
+    color: #B0B435;
+}
+
+.list a:hover{
+    color: #B0B435;
+    
+    
+
+}
+.list{
+    display: inline-block;
+    width: 67%;
+    margin-top: 35px;
+    
+    
+}
+nav ul li{
+    display: inline-block;
+    padding: 20px;
+    font-weight: bold;
+}
+.main{
+    
+    height: 82vh;
+    background-image: url(./banner-01.jpg);
+    background: 100% 100% rgba(0, 0, 0, 0.347);
+    background-blend-mode: overlay;
+    animation-name: slider;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+    animation-direction: initial;
+}
+@keyframes slider {
+    0%{
+        background-image: url(./banner-01.jpg);
+        /* filter: brightness(70%); */
+    }
+    50%{
+        background-image: url(./banner-02.jpg);
+        /* filter: brightness(70%); */
+    }
+    100%{
+        background-image: url(./banner-03.jpg);
+        /* filter: brightness(70%); */
+    }
+}
+h1{
+    color: white;
+    padding: 190px 70px 3px 100px;
+    font-size: 64px;
+    text-align: center;
+    font-weight: bolder;
+    /* font-family: poppins; */
+    
+    
+}
+p{
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    
+}
+.but{
+    margin-left: 700px;
+    margin-top: 15px;
+    height: 70px;
+    width: 160px;
+    font-size: 24px;
+    padding: 10px 20px;
+    background-color: #B0B435;
+    color: white;
+    font-family: dosis;
+
+}
+button:hover{
+    transition-duration: 2s;
+    background-color: black;
+}
+.parent{
+    display:flex;
+    justify-content: center;
+    
+}
+
+.child .pic1{
+    height: 300px;
+    width: 330px;
+    border-radius: 3px 3px 6px 4px black;
+    margin-top: 50px;
+    margin-left: 30px;
+ }
+ .child .pic1:hover{
+    transform: translate3d(-10px,-10px,0px);
+    opacity: 0.4;
+    backface-visibility: hidden;
+    filter: opacity(100);
+ }
+ .add{
+    margin-top: 50px;
+    height: 450px;
+    width: 100%;
+    background-color: #F4F4F4 ;
+    display: flex;
+    justify-content: center;
+    /* margin: 5px; */
+   
+ }
+ .img1{
+    margin: 50px;
+    margin-right: 15px;
+ }
+ .img2{
+    margin: 50px;
+    margin-left: 15px;
+ }
+ .img1:hover{
+     transform: translateY(15px);
+     transition-duration: 1s;
+     
+ }
+ .img2:hover{
+    transform: translateY(15px);
+     transition-duration: 1s;
+ }
+ 
+    
+
+
+
